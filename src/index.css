@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-color: #000000;
+  --blue-color: #243447;
+  --gray-color: #dfdfdf;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-family: "Commissioner", serif;
+}
+
+/* --------- HEADER --------- */
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-color);
+  color: white;
+  align-items: center;
+  padding: 1rem 0;
+  font-family: "Teko", serif;
+  font-weight: lighter;
+}
+header div {
+  display: flex;
+  font-size: 5rem;
+  font-weight: bold;
+  gap: 2rem;
+  align-items: center;
+  padding: rem 0;
+  img {
+    width: 7rem;
+  }
+}
+.header-logo {
+  padding: 1rem 0;
+}
+header nav {
+  display: flex;
+  width: 100%;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+
+.link-nav {
+  border-radius: 0.2rem;
+  transition: 0.6s;
+  padding: 0.1rem 1.4rem;
+}
+.link-nav:hover {
+  background-color: var(--gray-color);
+  color: black;
+  transition: ease-in-out;
+}
+.nav-pages {
+  font-size: 1.7rem;
+}
+.nav-social {
+  font-size: 2.1rem;
+}
+
+/* --------- FOOTER --------- */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blue-color);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem 0;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  font-size: 4.3rem;
+  gap: 2rem;
+  font-weight: bold;
+  font-family: "Teko", serif;
+  img {
+    width: 4.5rem;
+    border-radius: 10px;
+  }
+}
