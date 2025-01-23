@@ -44,8 +44,9 @@ const ModalResults: React.FC<ModalResultsProps> = ({
                     </p>
                     <p className="my-2">
                       <strong>Fecha del Voucher: </strong>
-                      {formattedDate(voucher?.date_voucher)}
-                      {/* {voucher?.date_voucher} */}
+                      {voucher?.date_voucher
+                        ? formattedDate(voucher.date_voucher.toString())
+                        : "Fecha no disponible"}
                     </p>
                     <p className="my-2">
                       <strong>Total: </strong>

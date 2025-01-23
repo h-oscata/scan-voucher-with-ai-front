@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 export const History = () => {
   const [dataVoucher, setDataVoucher] = useState<Voucher[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
+  console.log(loading);
 
   useEffect(() => {
     const fetchData = async () => {
