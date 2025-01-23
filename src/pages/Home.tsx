@@ -12,8 +12,9 @@ export const Home: React.FC = () => {
   const [showErrorAlert, setShowErrorAlert] = useState(false);
   const [showModalResult, setShowModalResult] = useState(false);
   const [resultsVoucher, setResultsVoucher] = useState<Voucher | null>(null);
+  const URL_API_BACK = import.meta.env.VITE_URL_BACKEND as string;
 
-  const URL_API_BACK = "http://localhost:3000/groq/procesar-voucher";
+  // const URL_API_BACK = "http://localhost:3000/groq/procesar-voucher";
 
   // Metodo para validar el archivo seleccionado
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {

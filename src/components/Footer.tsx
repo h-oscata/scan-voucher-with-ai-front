@@ -3,7 +3,7 @@ export const Footer: React.FC = () => {
     <>
       <footer>
         <div>
-          <img src="../public/logo.png" alt="" />
+          <img src="./../assets/images/logo.png" alt="" />
           <p>SCAN IA</p>
         </div>
         <span>Tu plaforma web para de reconocimiento de voucher con IA</span>

@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
     <>
       <header>
         <div className="header-logo">
-          <img src="../public/logo.png" alt="logo" />
+          <img src="./../assets/images/logo.png" alt="" />
           <p>SCAN IA</p>
         </div>
         <nav>
